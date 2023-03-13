@@ -82,8 +82,6 @@ export default function MainScheduler() {
     e: MouseEvent<HTMLDivElement>,
     data: scheduleType
   ) => {
-    console.log(e.clientX);
-    console.log(e.clientY);
     setDeleteModalOpen(true);
     setDeleteModalInfo({
       ...data,
@@ -263,7 +261,7 @@ export default function MainScheduler() {
   }
 
   return (
-    <div style={{ width: "100%", marginLeft: "15px" }}>
+    <div style={{ width: "100%", marginLeft: "15px", height: "100%" }}>
       <SchedulerHeader />
       <SchedulerInnerWrap>
         <DayHourRow />
