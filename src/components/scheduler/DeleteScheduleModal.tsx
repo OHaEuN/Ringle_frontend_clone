@@ -108,8 +108,18 @@ const DeleteModalContainer = styled.div<{
     z-index: 90;
     padding: 5px;
     position: absolute;
-    top: ${(props) => (props.deleteModalInfo.position.y > 800 ? -120 : 0)}px;
+    top: ${(props) => (props.deleteModalInfo.position.y > 800 ? -120 : 50)}px;
     left: ${(props) => (props.deleteModalInfo.position.x > 800 ? -385 : 130)}px;
+
+    @media (max-width: 1150px) {
+      left: ${(props) => (props.deleteModalInfo.position.x > 800 ? -385 : 90)}px;
+    }
+    @media (min-width: 1350px) {
+      left: ${(props) => (props.deleteModalInfo.position.x > 800 ? -385 : 160)}px;
+    }
+    @media (min-width: 1500px) {
+      left: ${(props) => (props.deleteModalInfo.position.x > 800 ? -385 : 200)}px;
+    }
   }
 `;
 
