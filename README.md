@@ -1,4 +1,4 @@
-## Ringle frontend 과제 \_ Google Calendar Clone
+## Google Calendar Clone
 
 
 ### 구현 기능
